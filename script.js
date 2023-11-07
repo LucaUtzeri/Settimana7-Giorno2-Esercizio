@@ -8,6 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
         // textContainer.innerText = dataIsSet
         replaceH3Text(dataIsSet)
     }
+
+
 });
 
 const saveData = (event) => {
@@ -23,4 +25,13 @@ const saveData = (event) => {
 const replaceH3Text = (str) => {
     const textContainer = document.querySelector(".stored-name h3")
     textContainer.innerText = str
+}
+
+
+const count = () => {
+    let timerNumb = 0
+
+
+    const timer = setInterval(timerNumb += 1, 1000)
+    console.log(timerNumb)
 }
